@@ -1,4 +1,5 @@
 
+import os 
 
 import pickle 
 
@@ -360,9 +361,9 @@ preprocessor = Pipeline(steps= [
 
 # read the training data 
 
-path = r"/Users/abhisheksaurav/Desktop/flight-sagemaker-project/data/train.csv"
+dir_path = r"/Users/abhisheksaurav/Desktop/flight-sagemaker-project/data"
 
-train = pd.read_csv(path)
+train = pd.read_csv(os.path.join(dir_path, "train.csv"))
 
 X_train = train.drop(columns = "price")
 y_train = train.price.copy()
