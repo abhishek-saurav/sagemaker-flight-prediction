@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+feature-engine
+matplotlib
+xgboost
+streamlit
+altair
+vega_datasets
